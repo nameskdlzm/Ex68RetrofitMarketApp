@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:layout_marginStart="4dp"
+    android:layout_marginEnd="4dp"
+    android:padding="8dp">
+
+    <com.google.android.material.card.MaterialCardView
+
+        android:id="@+id/cv"
+        android:layout_width="120dp"
+        android:layout_height="100dp"
+        app:cardCornerRadius="8dp">
+
+        <ImageView
+            android:id="@+id/iv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/catd" />
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="안드로이드 앱을 만들어 줍니다"
+        android:layout_toRightOf="@id/cv"
+        android:layout_marginLeft="12dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="8dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:maxLines="1"
+        android:ellipsize="end"/>
+
+    <TextView
+        android:id="@+id/tv_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="코틀린으로 앱을 만들어 줍니다 4주 소요."
+        android:layout_below="@id/tv_title"
+        android:layout_alignLeft="@id/tv_title"
+        android:textSize="12sp"
+        android:maxLines="2"/>
+
+    <TextView
+        android:id="@+id/tv_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="가격: 500000원"
+        android:textStyle="bold"
+        android:textColor="@color/design_default_color_primary"
+        android:layout_alignLeft="@id/tv_title"
+        android:layout_alignParentBottom="true"/>
+
+    <ToggleButton
+        android:id="@+id/tb_favor"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/bg_favor"
+        android:checked="false"
+        android:textOn=""
+        android:textOff=""/>
+
+</RelativeLayout>
